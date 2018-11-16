@@ -1,6 +1,6 @@
 # DataStructure
 
- - 01 russian roulette
+ ## 01 russian roulette
 
 create student.txt in directory like
 ```
@@ -12,9 +12,10 @@ after execution, you can get result of game.
 
 
 
- - 02 integer calculator program.
+ ## 02 integer calculator program.
 
 Write down mathematical expression on cmd. You can get result printed.
 
 You can use `+ , - , * , / , ( , )` . other operators are not supported.
-It does not check out incorrect equation.
+
+It does not check out incorrect expression.
