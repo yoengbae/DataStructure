@@ -12,7 +12,7 @@ after execution, you can get result of game.
 
 
 
- ## 02 integer calculator program.
+ ## 02 integer calculator
 
 Write down mathematical expression on cmd. You can get result printed.
 
