@@ -11,11 +11,10 @@ HASHTABLE* createHASHTable(int maxSize)
 	hash = (HASHTABLE*)malloc(sizeof(HASHTABLE));
 	if (!hash)
 		return NULL;
-		hash->compare = _compareString;
-		hash->hf = _hfString;
 
+	hash->compare = _compareString;
+	hash->hf = _hfString;
 	hash->maxSize = maxSize;
-
 	hash->hTable = (HNODE*)calloc(hash->maxSize, sizeof(HNODE));
 
 	for (i = 0; i<maxSize; i++) {
@@ -177,5 +176,5 @@ void* _makeDataNode(void *data)
 
 int _compareString(void* argu1, void* argu2)
 {
-	return 0;
+	return strcmp((char*)argu1, (char*)argu2);
 }

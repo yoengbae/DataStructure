@@ -22,8 +22,6 @@ int main(int argc, char *argv[])
 	while (1) {
 		printf("\n Menu...............\n");
 		printf("type -> I : create a HASHTABLE\n");
-		printf("type -> i : search&insert a Node\n");
-		printf("type -> d : search&delete a Node\n");
 		printf("type -> F : word usage count in a file\n");
 		printf("type -> s : show all Node in the Heap\n");
 		printf("type -> q : quit program\n");
@@ -31,22 +29,7 @@ int main(int argc, char *argv[])
 		{
 		case 'I':
 			fflush(stdin);
-			myHashTable = createHASHTable(10);
-			break;
-		case 'i':
-			fflush(stdin);
-			gets(Line);
-			token = strtok(Line, " ,\t\n");
-			while (token != NULL)
-			{
-				strcpy(dataInPtr, token);
-				result = HASHsearchInsert(myHashTable, dataInPtr);
-				if (result == 0)
-					printf("The key [%s] already existed!!\n", (char*)dataInPtr);
-				token = strtok(NULL, " ,\t\n");
-			}
-			break;
-		case 'd':
+			myHashTable = createHASHTable(100);
 			break;
 		case 'f':
 		case 'F':
